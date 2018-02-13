@@ -57,6 +57,7 @@ export default class Item extends Component {
     }
 
     deleteHandler() {
+        this.editText = "";
         this.props.todo.destroy();
     }
 
