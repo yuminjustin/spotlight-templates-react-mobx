@@ -24,6 +24,9 @@ This template is base on webpack, support for react + mobx development <br>
 
 todo操作方式：添加之后，双击修改，点击checkbox删除；（未做本地存储和筛选功能）<br><br>
 
+3.由于router使用的是history方式，build之后的代码需要放在根目录，不然就会404<br>
+Because the router mod is using "history". So after you run build , production code have to run at website's root path ,or all page is 404 <br><br>
+
 instead redux<br><br>
 
 Let's react enjoy!<br><br>
