@@ -29,4 +29,4 @@ Because the router mod is using "history". So after you run build , production c
 
 instead redux<br><br>
 
-Let's react enjoy!<br><br>
+Let's mobx!<br><br>
