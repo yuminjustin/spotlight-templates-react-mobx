@@ -1,4 +1,5 @@
 /* 按需加载 代码分割*/
+/* 已使用react-loadable代替*/
 import { Component } from 'react'
 
 export default class Bundle extends Component {
