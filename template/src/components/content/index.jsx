@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router'
-import { observer } from 'mobx-react';
 import Loadable from 'react-loadable';
 
 import { Layout } from 'antd'

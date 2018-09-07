@@ -3,7 +3,6 @@ import { observable } from 'mobx';
 
 // 菜单
 
-
 export default class Menu {
     @observable list = [];
 

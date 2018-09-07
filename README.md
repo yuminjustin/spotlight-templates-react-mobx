@@ -36,7 +36,8 @@ Because the router mod is using "history". So after you run build , production c
     location / {
         try_files $uri $uri/ /index.html;
     }
-
+    
+4.Upgrade to webpack4<br><br>
     
 instead redux<br><br>
 

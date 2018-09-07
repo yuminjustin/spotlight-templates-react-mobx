@@ -3,7 +3,7 @@ var replace = require('gulp-replace');
 var copy = require('gulp-contrib-copy');
 var config = require('./build/config');
 
-var root = config.build.gulpPath;
+var root = config.build.outputPathName;
 
 gulp.task('replace', function () {
 
