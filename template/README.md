@@ -3,7 +3,7 @@ spotlight scaffold template for react + mobx<br>
 
 ## Use：
 
-     spotlight init mobx my-project
+     spotlight mobx my-project
 
      cd my-project
 
