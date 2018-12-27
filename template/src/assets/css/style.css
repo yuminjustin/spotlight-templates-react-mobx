@@ -1,6 +1,14 @@
-h2._app_name,
+._app_name,
 ._user {
 	color: #fff;
+}
+
+._app_name {
+	composes: l from './reset.css'
+}
+
+._user {
+	composes: r from './reset.css'
 }
 
 ._left_bar {
@@ -21,6 +29,17 @@ h2._app_name,
 	text-align: center;
 }
 
+.dbl {
+	composes: db from './reset.css';
+	composes: l from './reset.css';
+}
+
+.dble {
+	composes: db from './reset.css';
+	composes: l from './reset.css';
+	composes: ellipsis from './reset.css';
+}
+
 /* todo demo */
 
 .mainbox {
@@ -28,6 +47,8 @@ h2._app_name,
 	padding: 20px 10px 0;
 	border: solid 1px #ddd;
 	margin-top: 15px;
+	composes: m from './reset.css';
+	composes: oh from './reset.css';
 }
 
 .mainbox h1 {
@@ -37,6 +58,7 @@ h2._app_name,
 .addbox {
 	width: 380px;
 	margin: 12px auto;
+	composes: c from './reset.css';
 }
 
 .addbox label {
@@ -64,6 +86,8 @@ h2._app_name,
 .listbox {
 	width: 520px;
 	margin-left: -10px;
+	composes: c from './reset.css';
+	composes: oh from './reset.css';
 }
 
 .listbox ul li {
@@ -102,13 +126,14 @@ h2._app_name,
 	width: 100%;
 }
 
-.listbox ul li.selected span {
+.selected span {
 	text-decoration: line-through;
 }
 
-.listbox ul li div.operate {
+.operate {
 	width: 160px;
 	text-align: center;
+	composes: r from './reset.css'
 }
 
 .listbox ul li button {
@@ -126,6 +151,11 @@ h2._app_name,
 
 .info {
 	margin-right: 28px;
+	composes: l from './reset.css'
+}
+
+.choose_btn {
+	composes: l from './reset.css'
 }
 
 .choose_btn span {
@@ -152,15 +182,16 @@ h2._app_name,
 	border-color: #ce4949;
 }
 
-.last_info .del {
+.del {
 	line-height: 30px;
 	height: 30px;
 	padding: 0 15px;
 	border-radius: 2px;
 	margin: 6px;
+	composes: r from './reset.css'
 }
 
-button:hover {
+.mainbox button:hover {
 	background: #6a84f2;
 	color: #fff;
 }
