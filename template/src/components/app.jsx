@@ -8,7 +8,7 @@ import Bar from './bar'
 import Content from './content'
 
 import { Layout } from 'antd';
-
+import style from 'B/assets/css/style.css';
 const history = createBrowserHistory();
 const { Sider } = Layout;
 
@@ -25,7 +25,7 @@ export default class App extends Component {
             <Sider>
               <Bar />
             </Sider>
-            <Layout className="_main_body">
+            <Layout className={style._main_body}>
               <Content />
             </Layout>
           </Layout>
