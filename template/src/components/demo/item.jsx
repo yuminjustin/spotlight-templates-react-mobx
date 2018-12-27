@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import { observable } from 'mobx';
+import style from 'B/assets/css/style.css';
 
 @observer
 export default class Item extends Component {
@@ -20,11 +21,11 @@ export default class Item extends Component {
             show2 = Object.assign({}, show, { "marginRight": "8px" });
 
         return (
-            <li onDoubleClick={this.editHandler.bind(this)} className={todo.completed ? "selected" : ""}>
-                <input type="checkbox" className="l db" style={show} onChange={this.chooseHandler.bind(this)} checked={todo.completed} />
-                <span className="db l ellipsis" style={show} >{todo.title}</span>
-                <input type="text" placeholder={todo.title} className="l db" style={hide} value={this.editText} onChange={this.handleChange.bind(this)} />
-                <div className="operate r">
+            <li onDoubleClick={this.editHandler.bind(this)} className={todo.completed ? style.selected : ""}>
+                <input type="checkbox" className={style.dbl} style={show} onChange={this.chooseHandler.bind(this)} checked={todo.completed} />
+                <span className={style.dble} style={show} >{todo.title}</span>
+                <input type="text" placeholder={todo.title} className={style.dbl} style={hide} value={this.editText} onChange={this.handleChange.bind(this)} />
+                <div className={style.operate}>
                     <button style={show2} onClick={this.deleteHandler.bind(this)}>删除</button>
                     <button style={hide2} onClick={this.submitHandler.bind(this)}>修改</button>
                     <button style={hide} onClick={this.cancelHandler.bind(this)}>取消</button>
