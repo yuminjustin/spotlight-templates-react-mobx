@@ -1,6 +1,5 @@
 import 'antd/dist/antd.css';
 import 'B/assets/css/reset.css';
-import 'B/assets/css/style.css';
 import '@babel/polyfill'
 /* react*/
 import React from 'react';
