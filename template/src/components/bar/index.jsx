@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon } from 'antd';
-
+import style from 'B/assets/css/style.css';
 const SubMenu = Menu.SubMenu;
 
 @inject('menu')
@@ -56,7 +56,7 @@ export default class Bar extends Component {
         let list = this.splitData(this.props.menu.list)
 
         return (
-            <div className="_left_bar">
+            <div className={style._left_bar}>
                 <Menu
                     onClick={this.handleClick}
                     style=\{{ width: '100%' }}
