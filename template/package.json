@@ -9,7 +9,7 @@
   },
   "author": "{{author}}",
   "license": "MIT",
-    "devDependencies": {
+  "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-decorators": "^7.4.4",
