@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react';
-import { Router } from 'react-router'
-import createBrowserHistory from 'history/createBrowserHistory'
+import { HashRouter } from "react-router-dom";
 
 import Headers from './head'
 import Bar from './bar'
@@ -9,7 +8,6 @@ import Content from './content'
 
 import { Layout } from 'antd';
 import style from 'B/assets/css/style.css';
-const history = createBrowserHistory();
 const { Sider } = Layout;
 
 @observer
@@ -18,7 +16,7 @@ export default class App extends Component {
     let { props } = this;
 
     return (
-      <Router history={history}>
+      <HashRouter>
         <Layout>
           <Headers />
           <Layout>
@@ -30,7 +28,7 @@ export default class App extends Component {
             </Layout>
           </Layout>
         </Layout>
-      </Router>
+      </HashRouter>
     )
   }
 }

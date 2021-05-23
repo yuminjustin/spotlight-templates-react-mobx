@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router-dom';
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
+import {
+    TeamOutlined,
+    ShopOutlined
+} from '@ant-design/icons';
 import style from 'B/assets/css/style.css';
 const SubMenu = Menu.SubMenu;
 
@@ -29,7 +33,7 @@ export default class Bar extends Component {
                 if (item.icon) {
                     title = (
                         <span>
-                            <Icon type={item.icon} />
+                            {item.icon == 'team' ? <TeamOutlined /> : <ShopOutlined />}
                             <span>{item.name}</span>
                         </span>
                     )
@@ -59,7 +63,7 @@ export default class Bar extends Component {
             <div className={style._left_bar}>
                 <Menu
                     onClick={this.handleClick}
-                    style=\{{ width: '100%' }}
+                    style={{ width: '100%' }}
                     defaultOpenKeys={['1']}
                     mode="inline"
                 >

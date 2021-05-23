@@ -37,8 +37,6 @@ Because the router mod is using "history". So after you run build , production c
         try_files $uri $uri/ /index.html;
     }
     
-4.Upgrade to webpack4<br><br>
-    
-instead redux<br><br>
+4.Upgrade to webpack5<br><br>
 
 Let's mobx!<br><br>
