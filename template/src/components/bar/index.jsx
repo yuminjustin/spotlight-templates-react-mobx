@@ -63,7 +63,7 @@ export default class Bar extends Component {
             <div className={style._left_bar}>
                 <Menu
                     onClick={this.handleClick}
-                    style={{ width: '100%' }}
+                    style=\{{ width: '100%' }}
                     defaultOpenKeys={['1']}
                     mode="inline"
                 >

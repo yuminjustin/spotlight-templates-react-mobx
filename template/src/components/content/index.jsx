@@ -18,7 +18,7 @@ export default class Contents extends Component {
   render() {
 
     return (
-      <Content className="_content" style={{ height: this.state.height }}>
+      <Content className="_content" style=\{{ height: this.state.height }}>
         <Suspense
           fallback={
             <div className="_error_404">
